@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+streamlit = "*"
+streamlit-tags = "*"
+streamlit-aggrid = "*"
+streamlit-echarts = "*"
+streamlit-ace = "*"
+
+[dev-packages]
+black = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.9"
