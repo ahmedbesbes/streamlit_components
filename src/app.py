@@ -1,6 +1,5 @@
 import streamlit as st
-from components.echarts import display_echarts
-from components.ace import display_ace
+from components.echarts import main as main_echarts
 
 st.set_page_config(layout="wide")
 
@@ -11,7 +10,4 @@ component = st.sidebar.radio(
 
 
 if component == "echarts":
-    display_echarts()
-
-elif component == "st_ace":
-    content = display_ace()
+    main_echarts.render_echarts()
